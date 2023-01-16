@@ -2,7 +2,7 @@
 ---
 ## Project Overveiw
 
-I am using the Substance Abuse and Mental Health Data Archive to retrieve client health level information in the United States. This information is found on the Link to [SAMHDA website](https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2020-mh-cld-2020-ds0001). Because this information is within a compact CSV file and the Link to [SAMHDA Codebook](https://www.datafiles.samhsa.gov/sites/default/files/field-uploads-protected/studies/MH-CLD-2020/MH-CLD-2020-datasets/MH-CLD-2020-DS0001/MH-CLD-2020-DS0001-info/MH-CLD-2020-DS0001-info-codebook.pdf), I wanted to create an easier way to access the information regarding different marginalized groups and their associated mental health diagnosis. 
+I am using the Substance Abuse and Mental Health Data Archive to retrieve client health level information in the United States. This information is found on the Link to [SAMHDA website](https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2020-mh-cld-2020-ds0001) and the Link to [SAMHDA Codebook](https://www.datafiles.samhsa.gov/sites/default/files/field-uploads-protected/studies/MH-CLD-2020/MH-CLD-2020-datasets/MH-CLD-2020-DS0001/MH-CLD-2020-DS0001-info/MH-CLD-2020-DS0001-info-codebook.pdf). Because this information is within a compact CSV file, I wanted to create an easier way to access the information regarding different marginalized groups and their associated mental health diagnosis. 
 
 In this process I will be creating the following:
 - Using Jupyter Notebook to utilize Pandas and Python to perform ETL on the SAMHDA CSV file
