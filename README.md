@@ -7,6 +7,7 @@ I am using the Substance Abuse and Mental Health Data Archive to retrieve client
 In this process I will be creating the following:
 - Using Jupyter Notebook to utilize Pandas and Python to perform ETL on the SAMHDA CSV file
 - Visual Studiocode: HTML, JavaScript, CSS, Google Chrome
+- Tableau Public
 ---
 ## The Process
 
