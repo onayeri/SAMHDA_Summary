@@ -24,7 +24,7 @@ This is an HTML file for a website. It appears to be a webpage that discusses me
 
 ## Next Steps
 
-MY next steps involve contiueing the ETL process in Jupyter Notebook which will allow me to load the data in the javascript file. This will allow the HTML to properly link the created filter structures to the data and produce the information we are interested in veiwing. Once I do this successfully, I will most likey add the 2019 data. I think that I will merge the 2020 data and 2019 data in PostgreSQL and then use that new file as an upload to the javascript data file. 
+My next steps involve continueing the ETL process in Jupyter Notebook which will allow me to load the data in the javascript file. This will allow the HTML to properly link the created filter structures to the data and produce the information we are interested in veiwing. Once I do this successfully, I will most likey add the 2019 data. I think that I will merge the 2020 data and 2019 data in PostgreSQL and then use that new file as an upload to the javascript data file. 
 
 
 
