@@ -1,0 +1,18 @@
+body {
+
+    color:#d0dede;
+  }
+  div.jumbotron {
+    background-image: url("https://i.pinimg.com/originals/16/f3/b0/16f3b0bc85829c9151e1cc6e9fba90b3.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    margin-bottom: 100px ;
+  }
+
+  body {
+    padding-bottom: 500px;
+}
+
+  label {
+    display: block;
+  }

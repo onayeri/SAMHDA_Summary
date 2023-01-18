@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Demographics</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-dark">
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="index.html"> SAMHDA Demographic Data</a>
+    </nav>
+  </div>
+<!-- web header -->
+  <div class="jumbotron">
+    <h1 class="display-4"><sw-font-weight-semibold>Substance Abuse & Mental Health Data Archive Summary</sw-font-weight-semibold></h1>
+  </div>
+<!-- article body -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <span id="typed"></span>
+        <script src="C:\Users\on080\OneDrive\Data Boot Camp\Module_11\Mental_Health_Data_Archive_2020\static\js\app.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        // disables source maps
+        <script Typed.new.defaults.sourceMap = false;></script>
+        <h2 class=" ">           </h2> 
+        <h3>Mental Heath in the United States: How does it affect YOU? </h3>
+        <h3><small>Search the Mental Health Data Archive</small></h3>
+      </div>
+      <div class="col-md-8">
+        <p>
+          How does our Mental Health Data reflect as a Population? In the year 2020, humans experienced the harsh realities of the virus commonly known as Covid or Covid-19, the name signifying it's discovery in the year 2019. Mental Health has become an increasingly mainstream topic over the past decade with people being more vulnerable and open about their experiences with mental haelth through the use of social media and connecting with others.
+          The mental health of the human population was put to the test in the past 3 years, especially in the year 2020. 
+          This was the year that many friends and family memebers became sick and lost their lives to the virus, people lost there jobs
+          and were faced with unemployment, and many of us had to isolate and change our overall lives to accomodate this deadly virus.
+          
+          Using the Substance Abuse and Mental Health Data Archive (SAMHA), we are able to take a look at client-level data and analyze how different populations were 
+          represented with having different diagnosis during the year 2020. The filters can be used to select a state, race, age, and gender to better understand
+          how different marginalized groups compare when being represented in the data. Some populations have more data provided than others, that also is an indication of who is with or without access to services. We must also take into account that mental health is still stigmatized in some ways within different populations which may limit our search and findings.
+          I am also planning to add 2019 data as another year of data if I can get the filter engine to sync properly.
+          
+          Disclaimer: this information is only for reserach purposes, this can not be used to self diagnose, please seek help from a professional if you feel that you may be expereincing 
+        </p>
+      </div>
+     </div>
+    </div>
+    <!--Container for Filter & Table -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Filter -->
+        <div class="col-md-3">
+          <div class="filters">
+            <form class="bg-dark">
+              <p><weight-semibold>Filter Search</weight-semibold></p> 
+            </form>
+            <ul class="list-group">
+          <!-- <ul class="list-group"> -->
+              <li class="list-group class btn-dark">
+                <label for="year">Enter Year</label>
+                <input type="text" placeholder="2020" id="year" />
+              </li>
+              <!-- Creating a drop list for the Diagnosos search bar to give options for more specified data search -->
+                <li class="list-group class btn-dark">
+                  <label for="diagnosis">Enter Diagnosis</label>
+                 <!-- <input type="text" placeholder="Anxiety" id="diagnosis" /> -->
+                 <select id="diagnosis-select">
+                    <option value="" selected>Select a diagnosis</option>
+                    <option value="Attention deficit/hyperactivity disorder (ADHD)" >ADHD</option>
+                    <option value="Alcohol or substance use disorders">Alcohol/Substance Disorder</option>
+                    <option value="Anxiety disorders">Anxiety Disorder</option>
+                    <option value="Bipolar disorders">Bipolar Disorder</option>
+                    <option value="BConduct disorders">Conduct Disorders</option>
+                    <option value="Delirium/dementia">Delirium/dementia</option>
+                    <option value="Depressive disorders">Depressive Disorder</option>
+                    <option value="Oppositional defiant disorders">Oppositional Defiant Disorder</option>
+                    <option value="Pervasive developmental disorder">Pervasive Developmental Disorder</option>
+                    <option value="Personality disorders">Personality Disorder</option>
+                    <option value="Schizophrenia or other psychotic disorders">Schizophrenia</option>
+                    <option value="Trauma- and stressor-related disorders">Trauma Disorder</option>
+                    <option value="Other disorders/conditions">Other</option>
+                    <option value="Information unavailable">Information unavailable</option>
+                  </select> 
+              </li>
+              <li class="list-group class btn-dark">
+                <label for="region">Enter Region</label>
+                <!-- <input type="text" placeholder="Midwest" id="region" /> -->
+                <select id="region-select">
+                  <option value="" selected>Select a region</option>
+                  <option value="Northeast" >Northeast</option>
+                  <option value="Midwest">Midwest</option>
+                  <option value="South">South</option>
+                  <option value="West">West</option>
+                  <option value="Other Jurisdictions">Other Jurisdictions</option>
+                </select> 
+              </li>
+              <li class="list-group class btn-dark">
+                <label for="state">Enter State</label>
+                <input type="text" placeholder="Alabama" id="state" />
+              </li>
+              <li class="list-group btn-dark">
+                <label for="race">Enter Race</label>
+                <!-- <input type="text" placeholder="Race" id="race" /> -->
+                <select id="race-select">
+                  <option value="" selected>Select a race</option>
+                  <option value="American Indian/Alaska Native" >American Indian/Alaska Native</option>
+                  <option value="Asian">Asian</option>
+                  <option value="Black or African American">South</Black or African American>
+                  <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                  <option value="White">White</option>
+                  <option value="Some other race alone/two or more races">Some other race alone/two or more races</option>
+                  <option value="Missing/unknown/not collected/invalid">N/A</option>
+                </select> 
+              </li>
+              <li class="list-group btn-dark">
+                <label for="age">Enter Age</label>
+                <input type="number" placeholder="0" id="age" />
+              </li>
+              <li class="list-group btn-dark">
+                <label for="Gender">Enter Gender</label>
+                <!-- <input type="text" placeholder="Female" id="gender" /> -->
+                <select id="gender-select">
+                  <option value="" selected>Select a gender</option>
+                  <option value="Male" >Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Unknown">Unknown</option>
+              </li>
+              <li class="list-group-item">
+                <button id="filter-btn" type="button" class="btn-dark">
+                  Filter Table
+                </button>
+              </li> 
+            </ul>
+            </form>
+          </div>
+        </div>
+        <!-- End of filter container -->
+        <!-- Table -->
+        <div class="col-md-9">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Diagnosis</th>
+                <th>Region</th>
+                <th>State</th>
+                <th>Race</th>
+                <th>Age</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div> <!-- End of table container-->
+      </div> <!-- End of row container -->   
+    </div>
+  </div>
+  <!-- <div style="padding-bottom:100px;"></div> -->
+</body
+<!-- End of wrapper container -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/MentalHealth_DemoData.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+</html>
