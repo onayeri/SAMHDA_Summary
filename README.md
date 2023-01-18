@@ -7,7 +7,7 @@ I am using the Substance Abuse and Mental Health Data Archive to retrieve client
 In this process I will be creating the following:
 - Using Jupyter Notebook to utilize Pandas and Python to perform ETL on the SAMHDA CSV file
 - Visual Studiocode: HTML, JavaScript, CSS, Google Chrome
-- Tableau Public
+- [Tableau Public](https://public.tableau.com/app/profile/olivia.nayeri/viz/MentalHealthDemographics/2020SubstanceAbuseandMentalHealthDemoDashboard#1)
 ---
 ## The Process
 
@@ -21,6 +21,10 @@ It also defines a function called "handleClick" that is triggered when the butto
 Finally, the code attaches an event listener to the button with the id "filter-btn" so that when it is clicked, it triggers the "handleClick" function. It also calls the "buildTable" function with the tableData from "data.js" to build the table when the page loads.
 
 This is an HTML file for a website. It appears to be a webpage that discusses mental health demographics and allows the user to search a data archive for information about substance abuse and mental health in the United States. The webpage is using Bootstrap for its layout and design, and is using jQuery and a JavaScript file
+
+## Next Steps
+
+MY next steps involve contiueing the ETL process in Jupyter Notebook which will allow me to load the data in the javascript file. This will allow the HTML to properly link the created filter structures to the data and produce the information we are interested in veiwing. Once I do this successfully, I will most likey add the 2019 data. I think that I will merge the 2020 data and 2019 data in PostgreSQL and then use that new file as an upload to the javascript data file. 
 
 
 
