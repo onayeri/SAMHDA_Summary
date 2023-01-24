@@ -6,6 +6,7 @@ I am using the Substance Abuse and Mental Health Data Archive to retrieve client
 
 In this process I will be creating the following:
 - Using Jupyter Notebook to utilize Pandas and Python to perform ETL on the SAMHDA CSV file
+- Use cloud service AWS to tranform the CSV to make the data available via URL 
 - Visual Studiocode: HTML, JavaScript, CSS, Google Chrome
 - [Tableau Public](https://public.tableau.com/app/profile/olivia.nayeri/viz/MentalHealthDemographics/2020SubstanceAbuseandMentalHealthDemoDashboard#1)
 ---
