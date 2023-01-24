@@ -16,3 +16,11 @@ body {
   label {
     display: block;
   }
+
+  <style>
+  .custom-file-input {
+    display: none;
+  }
+  .custom-file-label {
+    cursor: pointer;
+  }

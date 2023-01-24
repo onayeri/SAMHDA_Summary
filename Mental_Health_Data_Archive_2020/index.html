@@ -27,29 +27,33 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">
-        <span id="typed"></span>
+       <!-- <span id="typed"></span>
         <script src="C:\Users\on080\OneDrive\Data Boot Camp\Module_11\Mental_Health_Data_Archive_2020\static\js\app.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        // disables source maps
-        <script Typed.new.defaults.sourceMap = false;></script>
-        <h2 class=" ">           </h2> 
-        <h3>Mental Heath in the United States: How does it affect YOU? </h3>
-        <h3><small>Search the Mental Health Data Archive</small></h3>
+        disables source maps 
+        <script Typed.new.defaults.sourceMap = false;></script> -->
+         
+        <!-- Creating the typing text effect-->
+        <h2>Mental Heath in the USA:</h2>
+        <h3 class=" ">           </h3>
+        <h4><span class="element"></span></h4>
+        <script src="static/js/main.js"></script>
+
+        
+        <h5><small>Search the Mental Health Data Archive</small></h5>
       </div>
       <div class="col-md-8">
         <p>
-          How does our Mental Health Data reflect as a Population? In the year 2020, humans experienced the harsh realities of the virus commonly known as Covid or Covid-19, the name signifying it's discovery in the year 2019. Mental Health has become an increasingly mainstream topic over the past decade with people being more vulnerable and open about their experiences with mental haelth through the use of social media and connecting with others.
+          How does our Mental Health Data reflect us as a population? In the year 2020, humans experienced the harsh realities of the virus commonly known as Covid or Covid-19, the name signifying it's discovery in the year 2019. Mental Health has become an increasingly mainstream topic over the past decade with people being more vulnerable and open about their experiences with mental haelth through the use of social media and connecting with others.
           The mental health of the human population was put to the test in the past 3 years, especially in the year 2020. 
           This was the year that many friends and family memebers became sick and lost their lives to the virus, people lost there jobs
           and were faced with unemployment, and many of us had to isolate and change our overall lives to accomodate this deadly virus.
-          
-          Using the Substance Abuse and Mental Health Data Archive (SAMHA), we are able to take a look at client-level data and analyze how different populations were 
+          <p>Using the Substance Abuse and Mental Health Data Archive (SAMHA), we are able to take a look at client-level data and analyze how different populations were 
           represented with having different diagnosis during the year 2020. The filters can be used to select a state, race, age, and gender to better understand
           how different marginalized groups compare when being represented in the data. Some populations have more data provided than others, that also is an indication of who is with or without access to services. We must also take into account that mental health is still stigmatized in some ways within different populations which may limit our search and findings.
           I am also planning to add 2019 data as another year of data if I can get the filter engine to sync properly.
-          
-          Disclaimer: this information is only for reserach purposes, this can not be used to self diagnose, please seek help from a professional if you feel that you may be expereincing 
+          <p><small>Disclaimer: this information is only for reserach purposes, this can not be used to self diagnose, please seek help from a professional if you feel that you may be expereincing mental health challenges.</small>
         </p>
       </div>
      </div>
@@ -67,7 +71,12 @@
           <!-- <ul class="list-group"> -->
               <li class="list-group class btn-dark">
                 <label for="year">Enter Year</label>
-                <input type="text" placeholder="2020" id="year" />
+                <!--<input type="text" placeholder="2020" id="year" />-->
+                <select id="year-select">
+                  <option value="" selected>Select a year</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                </select>
               </li>
               <!-- Creating a drop list for the Diagnosos search bar to give options for more specified data search -->
                 <li class="list-group class btn-dark">
@@ -105,7 +114,57 @@
               </li>
               <li class="list-group class btn-dark">
                 <label for="state">Enter State</label>
-                <input type="text" placeholder="Alabama" id="state" />
+               <!-- <input type="text" placeholder="Alabama" id="state" /> -->
+                <select id="state-select">
+                  <option value="" selected>Select a state</option>
+                  <option value="Alabama" >Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Arkansas">Arkansas</option>
+                  <option value="California">California</option>
+                  <option value="Colorado">Colorado</option>
+                  <option value="Connecticut">Connecticut</option>
+                  <option value="Delware">Delware</option>
+                  <option value="District of Columbia">District of Columbia</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Idaho">Idaho</option>
+                  <option value="Illinois">Illinois</option>
+                  <option value="Indiana">Kansas</option>
+                  <option value="Kentucky">Kentucky</option>
+                  <option value="Lousisiana">Lousisiana</option>
+                  <option value="Massachusetts">Massachusetts</option>
+                  <option value="Michigan">Michigan</option>
+                  <option value="Minnesota">Minnesota</option>
+                  <option value="Mississippi">Mississippi</option>
+                  <option value="Missouri">Missouri</option>
+                  <option value="Montana">Montana</option>
+                  <option value="Nebraska">Nebraska</option>
+                  <option value="Nevada">Nevada</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Mexico">New Mexico</option>
+                  <option value="New York">New York</option>
+                  <option value="North Carolina">North Carolina</option>
+                  <option value="North Dakota">North Dakota</option>
+                  <option value="Ohio">Ohio</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                  <option value="Oregon">Oregon</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="Rhode Island">Rhode Island</option>
+                  <option value="South Carolina">South Carolina</option>
+                  <option value="South Dakota">South Dakota</option>
+                  <option value="Tennessee">Tennessee</option>
+                  <option value="Texas">Texas</option>
+                  <option value="Utah">Utah</option>
+                  <option value="Vermont">Vermont</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Washington">Washington</option>
+                  <option value="Wisconsin">Wisconsin</option>
+                  <option value="Wyoming">Wyoming</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Other Jurisdictions">Other Jurisdictions</option>
+                </select>
               </li>
               <li class="list-group btn-dark">
                 <label for="race">Enter Race</label>
@@ -123,7 +182,7 @@
               </li>
               <li class="list-group btn-dark">
                 <label for="age">Enter Age</label>
-                <input type="number" placeholder="0" id="age" />
+                <input type="number" placeholder="0" id="age" min="0" max="100"/>
               </li>
               <li class="list-group btn-dark">
                 <label for="Gender">Enter Gender</label>
@@ -164,11 +223,22 @@
       </div> <!-- End of row container -->   
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="bubble"></div>
+    </div>
+  </div>
   <!-- <div style="padding-bottom:100px;"></div> -->
 </body
 <!-- End of wrapper container -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/MentalHealth_DemoData.js"></script>
+  <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
+  <script src="static/js/main.mjs"></script>
+  <form>
+    <label for="file-input">Upload a file:</label>
+    <input type="file" id="file-input" name="file-input">
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>

@@ -1,8 +1,11 @@
 //this is meant to create the typing affect on the text
-var typed = new typed('#typed', {
-  strings: ["Mental Health Matters", "YOUR Mental Health Matters"],
-  typeSpeed: 70
-});
+//var typed = new typed('#typed', {
+//  strings: ["Mental Health Matters", "YOUR Mental Health Matters"],
+//  typeSpeed: 70
+//}); 
+
+
+
 
 //this is to create the diagnosis dropdown 
 /*const form = document.querySelector("form");
